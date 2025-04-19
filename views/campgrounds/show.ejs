@@ -130,8 +130,6 @@
     </div>
     <script>
         const mapToken = '<%- process.env.MAPBOX_TOKEN %>'
-        const tit = '<%- JSON.stringify(campground) %>'
-        const loc = '<%- campground.location %>'
-        const campground = <%= JSON.stringify(campground.geometry.coordinates) %>
+        const campground = <%- JSON.stringify(campground) %>
     </script>
     <script src="/javascripts/showpageMap.js"></script>
